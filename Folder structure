@@ -1,0 +1,16 @@
+config:        contain database and server config files.
+controller:    js contain , flow of data, view and model .
+middleware:    for authentication and validation
+migration :    any change of database recorded and sync through this command 
+model :        files by ORM , Schema and Querey
+node_modules:  all the NPM (node package manger ) installed 
+route:         make api calls to database , listen on port , end point
+seeder :       its like meta data , provide  data to database 
+services:      files with business logic used to access dbase 
+.env:           all the password and name , hostname
+package.json :  all the dependencies all the framework version u can see 
+
+ API Call --> Routes --> Controller(handle data) --> service <--> dbase 
+migration follow DDL (Data Definition lang)
+
+
