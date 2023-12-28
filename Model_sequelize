@@ -1,0 +1,44 @@
+Model are abstraction that represent a table in database.
+Model tells Entity about present such as Name of table in databse and which column.
+
+ Model can be define using 2 methods:
+1 calling : sequelize.define()
+2 extending model & calling : 
+
+ 1 method     
+ { //user model attributes
+},
+{ 
+ // optional 
+}
+ const { Sequelize, DataTypes } = require('sequelize');
+const sequelize = new Sequelize('sqlite::memory:');
+
+const User = sequelize.define('User', {
+  firstName: {
+    type: DataTypes.STRING,   // Model attributes are defined here
+    allowNull: false
+  },
+
+>>freezeTableName: true option. 
+This way, Sequelize will ensure the table name to be equal to the model name, without any modifications:(table name= model name)
+
+                                               MODEL SYNCHRONIZATION 
+a model can be sync with database by calling model.sync()
+ this will change in database table not the local at model side
+
+    User.sync() - This creates the table if it doesn't exist
+    User.sync({ force: true }) - This creates the table, dropping it first if it already existed
+    User.sync({ alter: true }) - This checks what is the current state of the table in the database 
+                             and then performs the necessary changes in the table to make it match the model.
+
+
+   Q How to Create Object?
+ ans -  1 build             2 create
+1 Build + save
+2  but in create we don't have to mention save 
+
+
+
+
+
