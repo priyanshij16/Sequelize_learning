@@ -1,3 +1,4 @@
+ https://education.github.com/git-cheat-sheet-education.pdf  >>PIYUSH GARG 
 Q what is vcs?
 ans- version control system helps to keep manage and track files ex : git, Apache , piper(google)
 
@@ -16,9 +17,33 @@ ans- version control system helps to keep manage and track files ex : git, Apach
 >> git blame  :          it will show line by line code and will tell this line is written by this author on date... 
 >> git status :            On branch master
                          nothing to commit, working tree clean
->> git add .    :        it will add all the files to the stagging area 
+>> git add .    :       add all the files to the stagging area 
 >> git reset hard--  : technique to revert back it will change the ( Head ptr to another commit )
->> git revert " "    : it will create new commit and 
+>> git revert " "    :  create new commit and 
+>> git stash         :  Temporarily store modified, tracked files in order to change branches.
+  
+     OUTPUT:     Saved working directory and index state WIP(work in progress) on main: 9337e5e changes 
+
+git clone by ssh :
+  https://www.youtube.com/watch?v=lV5mrUYsucU
+
+generate ssh keys add keys to your github account 
+ >> ssh-keygen -t rsa :   command for generating ssh keys 
+>> git reset --hard "commit id" : delete last commit 
+  ---------------------------------------------------
+                                  BRANCHING :
+>> git branch name
+>> git checkout bname 
+       // do all modifications 
+>> git add .
+>> commit 
+>> git push --set-upstream origin developer
+>> git merge origin/dev
+>> git push 
+                               --------------------
+ >> git pull : if any changes on remote site but not at local , also sync with server 
+
+
                             NOTE/HEALTHY TIP:
  developers shouldn't do all folders in one commit instead of it make isolated functions then commit each of them
 
