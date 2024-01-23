@@ -1,0 +1,19 @@
+git clone by ssh :
+  https://www.youtube.com/watch?v=lV5mrUYsucU
+
+generate ssh keys add keys to your github account 
+ >> ssh-keygen -t rsa :   command for generating ssh keys 
+>> git reset --hard "commit id" : delete last commit 
+  ---------------------------------------------------
+    BRANCHING :
+>> git branch name
+>> git checkout bname 
+       // do all modifications 
+>> git add .
+>> commit 
+>> git push --set-upstream origin developer
+>> git merge origin/dev
+>> git push 
+  --------------------
+ >> git pull : if any changes on remote site but not at local , also sync with server 
+
