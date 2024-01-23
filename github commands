@@ -1,0 +1,34 @@
+Q what is vcs?
+ans- version control system helps to keep manage and track files ex : git, Apache , piper(google)
+
+ >>Git init:  git will track specified folder , also create hidden folder which is named as .git 
+>> ls -a :     by entering this command you will get to see this folder 
+ (U) git untracked 
+   ------------
+
+>> git add "file name" :     this will add file from untracked to added (stagging area)
+>> git log :              it will enable to see all the commits done before in bottom -up manner . 
+                        type q/z  : for exit
+>> git log (oneline)   :  this command will displays the "short sha" and "short description".
+
+>> git diff  :             after doing any modification it will show all list of changes 
+>> git show:  "sha_id":  visualise what all are the changes done before 
+>> git blame  :          it will show line by line code and will tell this line is written by this author on date... 
+>> git status :            On branch master
+                         nothing to commit, working tree clean
+>> git add .    :        it will add all the files to the stagging area 
+>> git reset hard--  : technique to revert back it will change the ( Head ptr to another commit )
+>> git revert " "    : it will create new commit and 
+                            NOTE/HEALTHY TIP:
+ developers shouldn't do all folders in one commit instead of it make isolated functions then commit each of them
+
+       -------------------------------------------------------------------------------------------------
+                                         Normal Gyan :
+public server : its a central server where you can push commits or pull commits    ex github , bitbucket and gitLab 
+      why to use ? so that code maintain rhe and cloud pr save rhe 
+
+  
+1 git request --> A pull request is a way to ask another developer to merge one of your branches into their repository. 
+This not only makes it easier for project leads to keep track of changes, but also lets developers initiate
+discussions around their work before integrating it with the rest of the codebas
+
